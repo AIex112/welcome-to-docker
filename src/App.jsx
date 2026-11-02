@@ -9,12 +9,12 @@ const App = () => {
     <div className="App">
       <Confetti />
       <header className="App-header">
-        <h1 className="mb-0 bg-red-500">Félicitations!!!</h1>
+        <h1 className="mb-0 bg-blue-500">Félicitations!!!</h1>
         <p className="mt-2 mb-12">
           You ran your first container.
         </p>
-        <div>
-          <a
+        <div className="flex justify-center items-center gap-4">
+          <a 
             target="_blank"
             href={
               "https://twitter.com/intent/tweet?text=" +
@@ -22,7 +22,7 @@ const App = () => {
               "&url=" +
               shareLink
             }
-            className="fa-brands fa-x-twitter"
+            className="fa-brands fa-x-twitter flex justify-center items-center p-5 hover:opacity-70"
             rel="noopener noreferrer"
           >
             {" "}
@@ -32,7 +32,7 @@ const App = () => {
             href={
               "https://www.linkedin.com/sharing/share-offsite/?url=" + shareLink
             }
-            className="fa-brands fa-linkedin"
+            className="fa-brands fa-linkedin flex justify-center items-center p-5 hover:opacity-70"
             rel="noopener noreferrer"
           >
             {" "}
@@ -45,7 +45,7 @@ const App = () => {
               "&url=" +
               shareLink
             }
-            className="fa-brands fa-reddit"
+            className="fa-brands fa-reddit flex justify-center items-center p-5 hover:opacity-70"
             rel="noopener noreferrer"
           >
             {" "}

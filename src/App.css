@@ -22,19 +22,6 @@
   color: #61dafb;
 }
 
-.fa-brands {
-  padding: 20px;
-  font-size: 30px;
-  width: 50px;
-  margin: 10px;
-  text-align: center;
-  text-decoration: none;
-}
-
-.fa-brands:hover {
-  opacity: 0.7;
-}
-
 /* Twitter */
 .fa-x-twitter {
   background: #55acee;
