@@ -1,5 +1,5 @@
 import "./App.css";
-import Confetti from "./Confetti";
+import Confetti from "./Confetti.jsx";
 
 const shareMessage = "I just ran my first container using Docker";
 const shareLink = "https://docker.com/";
@@ -9,8 +9,8 @@ const App = () => {
     <div className="App">
       <Confetti />
       <header className="App-header">
-        <h1 style={{ marginBottom: "0px" }}>Félicitations!!!</h1>
-        <p style={{ marginTop: "10px", marginBottom: "50px" }}>
+        <h1 className="mb-0 bg-red-500">Félicitations!!!</h1>
+        <p className="mt-2 mb-12">
           You ran your first container.
         </p>
         <div>
@@ -22,7 +22,7 @@ const App = () => {
               "&url=" +
               shareLink
             }
-            class="fa-brands fa-x-twitter"
+            className="fa-brands fa-x-twitter"
             rel="noopener noreferrer"
           >
             {" "}
@@ -32,7 +32,7 @@ const App = () => {
             href={
               "https://www.linkedin.com/sharing/share-offsite/?url=" + shareLink
             }
-            class="fa-brands fa-linkedin"
+            className="fa-brands fa-linkedin"
             rel="noopener noreferrer"
           >
             {" "}
@@ -45,7 +45,7 @@ const App = () => {
               "&url=" +
               shareLink
             }
-            class="fa-brands fa-reddit"
+            className="fa-brands fa-reddit"
             rel="noopener noreferrer"
           >
             {" "}
