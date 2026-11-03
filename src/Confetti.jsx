@@ -13,7 +13,6 @@ const Confetti = () => {
     }, []);
 
     const particlesLoaded = useCallback(async container => {
-        await console.log(container);
     }, []);
 
     return (
@@ -28,16 +27,16 @@ const Confetti = () => {
                 emitters: [
                     {
                         position: {
-                            x: 0,
-                            y: 30
+                            x: 90,
+                            y: -10
                         },
                         rate: {
-                            quantity: 5,
-                            delay: 0.15
+                            quantity: 10,
+                            delay: 0.1
                         },
                         particles: {
                             move: {
-                                direction: "top-right",
+                                direction: "top-left",
                                 outModes: {
                                     top: "none",
                                     left: "none",
@@ -48,16 +47,16 @@ const Confetti = () => {
                     },
                     {
                         position: {
-                            x: 100,
-                            y: 30
+                            x: 10,
+                            y: -10
                         },
                         rate: {
-                            quantity: 5,
-                            delay: 0.15
+                            quantity: 10,
+                            delay: 0.1
                         },
                         particles: {
                             move: {
-                                direction: "top-left",
+                                direction: "top-right",
                                 outModes: {
                                     top: "none",
                                     right: "none",
@@ -71,7 +70,12 @@ const Confetti = () => {
                     color: {
                         value: [
                             "#ffffff",
-                            "#FF0000"
+                            "#FF0000",
+                            "#00FF00",
+                            "#0000FF",
+                            "#FFFF00",
+                            "#FF00FF",
+                            "#00FFFF"
                         ]
                     },
                     move: {
