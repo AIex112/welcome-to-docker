@@ -32,7 +32,7 @@ const Confetti = () => {
                         },
                         rate: {
                             quantity: 10,
-                            delay: 0.1
+                            delay: 0.15
                         },
                         particles: {
                             move: {
@@ -52,7 +52,7 @@ const Confetti = () => {
                         },
                         rate: {
                             quantity: 10,
-                            delay: 0.1
+                            delay: 0.15
                         },
                         particles: {
                             move: {
@@ -159,7 +159,8 @@ const Confetti = () => {
                         type: [
                             "square",
                             "triangle",
-                            "polygon"
+                            "polygon",
+                            "circle",
                         ],
                         options: {
                             polygon: [
